@@ -1,0 +1,1 @@
+seam_id,segment_id,split,signal_path,frames_path,trajectory_path,events_path,material,thickness_mm,view_offset_mm,position_sigma_mm,inspection_start_mm,inspection_end_mm,initial_power_w,synthetic

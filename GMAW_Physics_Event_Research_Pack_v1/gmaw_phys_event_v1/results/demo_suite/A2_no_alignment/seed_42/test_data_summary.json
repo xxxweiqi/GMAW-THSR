@@ -1,0 +1,19 @@
+{
+  "split": "test",
+  "samples": 318,
+  "seams": 2,
+  "target_events": 4,
+  "counts": {
+    "frames_total": 376,
+    "insufficient_history_or_warmup": 58
+  },
+  "synthetic": true,
+  "input_normalization": {
+    "current_a": 400.0,
+    "voltage_v": 40.0,
+    "power_w": 12000.0
+  },
+  "native_power_integration": "left sample hold of native U*I before resampling",
+  "power_window_s": 0.125,
+  "resampling": "scipy.signal.resample_poly, line padding; whole input window is causal"
+}

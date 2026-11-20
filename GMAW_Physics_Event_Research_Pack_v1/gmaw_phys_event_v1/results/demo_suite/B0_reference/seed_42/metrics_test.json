@@ -1,0 +1,265 @@
+{
+  "threshold": 0.5,
+  "iou_threshold": 0.1,
+  "merge_gap_mm": 0.0,
+  "min_length_mm": 0.0,
+  "frame": {
+    "n": 318,
+    "positives": 60,
+    "negatives": 258,
+    "tp": 56,
+    "fp": 6,
+    "tn": 252,
+    "fn": 4,
+    "accuracy": 0.9685534591194969,
+    "balanced_accuracy": 0.9550387596899225,
+    "macro_f1": 0.949288766983479,
+    "average_precision": 0.9627109067650703,
+    "auroc": 0.982687338501292,
+    "brier": 0.04414134504208596,
+    "ece": 0.12405111080726738
+  },
+  "clear_core": {
+    "n": 303,
+    "positives": 53,
+    "negatives": 250,
+    "tp": 53,
+    "fp": 2,
+    "tn": 248,
+    "fn": 0,
+    "accuracy": 0.9933993399339934,
+    "balanced_accuracy": 0.996,
+    "macro_f1": 0.9887327086122266,
+    "average_precision": 0.9979030844819381,
+    "auroc": 0.9995471698113207,
+    "brier": 0.029098398195446858,
+    "ece": 0.1436453038955679
+  },
+  "events": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "predicted_events": 4,
+    "observed_gt_events": 4,
+    "fully_covered_gt_events": 4,
+    "partially_covered_gt_events": 0,
+    "unobserved_gt_events": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "false_positive_events_per_evaluated_m": 0.0,
+    "full_coverage_recall": 1.0,
+    "matched_full_coverage_events": 4,
+    "matched_boundary_mae_mm": 0.6224374999999993,
+    "boundary_metric_n": 4,
+    "first_threshold_hit_delay_s_mean": 0.030750000000000277,
+    "first_threshold_hit_delay_s_median": 0.03950000000000031,
+    "delay_metric_n": 4
+  },
+  "coverage": {
+    "total_evaluated_m": 0.17241874999999998,
+    "input_frames": 318,
+    "scored_frames": 318,
+    "excluded_frames": 0,
+    "boundary_uncertain_scored_frames": 15,
+    "excluded_non_target_gt_events": 0,
+    "segments": [
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "evaluated_mm": 83.04375,
+        "intervals_mm": [
+          [
+            15.20625,
+            98.25
+          ]
+        ]
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "evaluated_mm": 89.37499999999997,
+        "intervals_mm": [
+          [
+            15.575000000000014,
+            104.94999999999999
+          ]
+        ]
+      }
+    ]
+  },
+  "event_details": {
+    "ground_truth": [
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "event_id": "SYNTH_08_E1",
+        "start_mm": 25.929,
+        "end_mm": 33.97,
+        "coverage_status": "fully_covered",
+        "coverage_fraction": 1.0,
+        "visible_intervals_mm": [
+          [
+            25.929,
+            33.97
+          ]
+        ],
+        "matched": true,
+        "prediction_id": "SYNTH_08/run1/pred_00000",
+        "reference_t_s": 6.03
+      },
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "event_id": "SYNTH_08_E2",
+        "start_mm": 55.685,
+        "end_mm": 63.425,
+        "coverage_status": "fully_covered",
+        "coverage_fraction": 1.0,
+        "visible_intervals_mm": [
+          [
+            55.685,
+            63.425
+          ]
+        ],
+        "matched": true,
+        "prediction_id": "SYNTH_08/run1/pred_00001",
+        "reference_t_s": 12.95
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "event_id": "SYNTH_09_E1",
+        "start_mm": 26.928000000000004,
+        "end_mm": 35.2,
+        "coverage_status": "fully_covered",
+        "coverage_fraction": 1.0,
+        "visible_intervals_mm": [
+          [
+            26.928000000000004,
+            35.2
+          ]
+        ],
+        "matched": true,
+        "prediction_id": "SYNTH_09/run1/pred_00000",
+        "reference_t_s": 6.12
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "event_id": "SYNTH_09_E2",
+        "start_mm": 58.08,
+        "end_mm": 66.0,
+        "coverage_status": "fully_covered",
+        "coverage_fraction": 1.0,
+        "visible_intervals_mm": [
+          [
+            58.08,
+            66.0
+          ]
+        ],
+        "matched": true,
+        "prediction_id": "SYNTH_09/run1/pred_00001",
+        "reference_t_s": 13.2
+      }
+    ],
+    "predictions": [
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_08/run1/pred_00000",
+        "start_mm": 24.88125,
+        "end_mm": 33.48124999999995,
+        "first_threshold_hit_t_s": 6.012,
+        "matched": true,
+        "event_id": "SYNTH_08_E1"
+      },
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_08/run1/pred_00001",
+        "start_mm": 54.98125,
+        "end_mm": 63.04375,
+        "first_threshold_hit_t_s": 13.012,
+        "matched": true,
+        "event_id": "SYNTH_08_E2"
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_09/run1/pred_00000",
+        "start_mm": 26.025000000000016,
+        "end_mm": 34.82499999999999,
+        "first_threshold_hit_t_s": 6.137,
+        "matched": true,
+        "event_id": "SYNTH_09_E1"
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_09/run1/pred_00001",
+        "start_mm": 57.37500000000006,
+        "end_mm": 65.62499999999999,
+        "first_threshold_hit_t_s": 13.262,
+        "matched": true,
+        "event_id": "SYNTH_09_E2"
+      }
+    ],
+    "matches": [
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_08/run1/pred_00000",
+        "event_id": "SYNTH_08_E1",
+        "iou": 0.8309448494017282,
+        "coverage_status": "fully_covered",
+        "boundary_mae_mm": 0.7682500000000214,
+        "first_threshold_hit_delay_s": -0.018000000000000682
+      },
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_08/run1/pred_00001",
+        "event_id": "SYNTH_08_E2",
+        "iou": 0.8715025906735758,
+        "coverage_status": "fully_covered",
+        "boundary_mae_mm": 0.5424999999999969,
+        "first_threshold_hit_delay_s": 0.062000000000001165
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_09/run1/pred_00000",
+        "event_id": "SYNTH_09_E1",
+        "iou": 0.8607084468664845,
+        "coverage_status": "fully_covered",
+        "boundary_mae_mm": 0.6390000000000011,
+        "first_threshold_hit_delay_s": 0.01699999999999946
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_09/run1/pred_00001",
+        "event_id": "SYNTH_09_E2",
+        "iou": 0.8747826086956565,
+        "coverage_status": "fully_covered",
+        "boundary_mae_mm": 0.5399999999999778,
+        "first_threshold_hit_delay_s": 0.062000000000001165
+      }
+    ]
+  },
+  "definitions": {
+    "event_recall": "Observed GT events only; partial GT clipped to evaluated support; unobserved GT excluded and listed.",
+    "event_matching": "One-to-one matching maximizes count of IoU-eligible pairs, then total IoU.",
+    "coverage": "Union of scored cells (y_hard in {0,1}, label_weight>0), never nominal seam length.",
+    "frame_weighting": "Unweighted hard-label frame metrics; label_weight controls inclusion only.",
+    "boundary_mae": "Matched fully covered GT only; mean absolute start/end error.",
+    "ece": "10 fixed equal-width probability bins; absolute mean probability minus positive frequency.",
+    "delay": "First threshold-positive observation in a matched predicted interval minus arc-pass GT-start reference time. Geometry offset and sensor availability are reflected in supplied positions/t_decision_s; runtime, hysteresis and actuator delay are not measured. This is not full online latency.",
+    "undefined": "Undefined metrics are JSON null, including absent-class AUROC/balanced accuracy/macro-F1."
+  },
+  "geometry_mae_roi_fraction": null,
+  "evidence_status": "SYNTHETIC_PIPELINE_ONLY",
+  "reference_not_original_mbgn": true,
+  "timing_note": "Event delays exclude preprocessing, model runtime and robot actuation."
+}

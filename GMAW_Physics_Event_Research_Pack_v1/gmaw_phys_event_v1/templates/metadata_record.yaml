@@ -1,0 +1,44 @@
+template_version: 1
+record_status: unfilled_template
+study_id: null
+seam_id: null
+segment_id: null
+acquisition_date: null
+operator: null
+data_owner: null
+synthetic: null
+workpiece:
+  material: null
+  heat_number: null
+  thickness_mm: null
+  joint_type: null
+  joint_orientation: null
+  preweld_geometry_record: null
+welding:
+  process_mode: null
+  power_source: null
+  robot: null
+  wire_material: null
+  wire_diameter_mm: null
+  wire_feed_speed_record: null
+  gas_composition: null
+  gas_flow_rate_l_min: null
+  travel_speed_record: null
+  torch_angle_record: null
+  contact_tip_to_work_distance_mm: null
+sensors:
+  current_sensor: null
+  voltage_measurement_location: null
+  native_sampling_hz: null
+  camera: null
+  image_hz: null
+  exposure_us: null
+  optical_filter: null
+  calibration_record_path: null
+provenance:
+  original_file_list: []
+  sha256_manifest_path: null
+  preprocessing_version: null
+  original_files_modified: null
+  missing_fields: []
+  unresolved_issues: []

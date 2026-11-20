@@ -1,0 +1,271 @@
+{
+  "threshold": 0.5,
+  "iou_threshold": 0.1,
+  "merge_gap_mm": 0.0,
+  "min_length_mm": 0.0,
+  "frame": {
+    "n": 310,
+    "positives": 60,
+    "negatives": 250,
+    "tp": 51,
+    "fp": 1,
+    "tn": 249,
+    "fn": 9,
+    "accuracy": 0.967741935483871,
+    "balanced_accuracy": 0.923,
+    "macro_f1": 0.9455146231721034,
+    "average_precision": 0.9674538891884051,
+    "auroc": 0.9820000000000001,
+    "brier": 0.03136608016296713,
+    "ece": 0.03758999944754666
+  },
+  "clear_core": {
+    "n": 295,
+    "positives": 53,
+    "negatives": 242,
+    "tp": 48,
+    "fp": 0,
+    "tn": 242,
+    "fn": 5,
+    "accuracy": 0.9830508474576272,
+    "balanced_accuracy": 0.9528301886792453,
+    "macro_f1": 0.9701350503148474,
+    "average_precision": 0.9985617914072671,
+    "auroc": 0.9996881334788711,
+    "brier": 0.017058681813682284,
+    "ece": 0.026034593054930034
+  },
+  "events": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "predicted_events": 4,
+    "observed_gt_events": 4,
+    "fully_covered_gt_events": 4,
+    "partially_covered_gt_events": 0,
+    "unobserved_gt_events": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "false_positive_events_per_evaluated_m": 0.0,
+    "full_coverage_recall": 1.0,
+    "matched_full_coverage_events": 4,
+    "matched_boundary_mae_mm": 0.6292499999999919,
+    "boundary_metric_n": 4,
+    "first_threshold_hit_delay_s_mean": 0.18700000000000028,
+    "first_threshold_hit_delay_s_median": 0.18700000000000117,
+    "delay_metric_n": 4
+  },
+  "coverage": {
+    "total_evaluated_m": 0.16806874999999996,
+    "input_frames": 310,
+    "scored_frames": 310,
+    "excluded_frames": 0,
+    "boundary_uncertain_scored_frames": 15,
+    "excluded_non_target_gt_events": 0,
+    "segments": [
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "evaluated_mm": 80.89375,
+        "intervals_mm": [
+          [
+            17.356250000000003,
+            98.25
+          ]
+        ]
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "evaluated_mm": 87.17499999999998,
+        "intervals_mm": [
+          [
+            17.775000000000002,
+            104.94999999999999
+          ]
+        ]
+      }
+    ]
+  },
+  "event_details": {
+    "ground_truth": [
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "event_id": "SYNTH_08_E1",
+        "start_mm": 25.929,
+        "end_mm": 33.97,
+        "coverage_status": "fully_covered",
+        "coverage_fraction": 1.0,
+        "visible_intervals_mm": [
+          [
+            25.929,
+            33.97
+          ]
+        ],
+        "matched": true,
+        "prediction_id": "SYNTH_08/run1/pred_00000",
+        "reference_t_s": 6.03
+      },
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "event_id": "SYNTH_08_E2",
+        "start_mm": 55.685,
+        "end_mm": 63.425,
+        "coverage_status": "fully_covered",
+        "coverage_fraction": 1.0,
+        "visible_intervals_mm": [
+          [
+            55.685,
+            63.425
+          ]
+        ],
+        "matched": true,
+        "prediction_id": "SYNTH_08/run1/pred_00001",
+        "reference_t_s": 12.95
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "event_id": "SYNTH_09_E1",
+        "start_mm": 26.928000000000004,
+        "end_mm": 35.2,
+        "coverage_status": "fully_covered",
+        "coverage_fraction": 1.0,
+        "visible_intervals_mm": [
+          [
+            26.928000000000004,
+            35.2
+          ]
+        ],
+        "matched": true,
+        "prediction_id": "SYNTH_09/run1/pred_00000",
+        "reference_t_s": 6.12
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "event_id": "SYNTH_09_E2",
+        "start_mm": 58.08,
+        "end_mm": 66.0,
+        "coverage_status": "fully_covered",
+        "coverage_fraction": 1.0,
+        "visible_intervals_mm": [
+          [
+            58.08,
+            66.0
+          ]
+        ],
+        "matched": true,
+        "prediction_id": "SYNTH_09/run1/pred_00001",
+        "reference_t_s": 13.2
+      }
+    ],
+    "predictions": [
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_08/run1/pred_00000",
+        "start_mm": 25.95625,
+        "end_mm": 32.40625,
+        "first_threshold_hit_t_s": 6.262,
+        "matched": true,
+        "event_id": "SYNTH_08_E1"
+      },
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_08/run1/pred_00001",
+        "start_mm": 55.518750000000004,
+        "end_mm": 62.50625,
+        "first_threshold_hit_t_s": 13.137,
+        "matched": true,
+        "event_id": "SYNTH_08_E2"
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_09/run1/pred_00000",
+        "start_mm": 26.575000000000003,
+        "end_mm": 34.275000000000006,
+        "first_threshold_hit_t_s": 6.262,
+        "matched": true,
+        "event_id": "SYNTH_09_E1"
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_09/run1/pred_00001",
+        "start_mm": 57.92500000000007,
+        "end_mm": 65.07499999999999,
+        "first_threshold_hit_t_s": 13.387,
+        "matched": true,
+        "event_id": "SYNTH_09_E2"
+      }
+    ],
+    "matches": [
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_08/run1/pred_00000",
+        "event_id": "SYNTH_08_E1",
+        "iou": 0.802139037433155,
+        "coverage_status": "fully_covered",
+        "boundary_mae_mm": 0.7955000000000005,
+        "first_threshold_hit_delay_s": 0.23199999999999932
+      },
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_08/run1/pred_00001",
+        "event_id": "SYNTH_08_E2",
+        "iou": 0.862766798418973,
+        "coverage_status": "fully_covered",
+        "boundary_mae_mm": 0.5424999999999969,
+        "first_threshold_hit_delay_s": 0.18700000000000117
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_09/run1/pred_00000",
+        "event_id": "SYNTH_09_E1",
+        "iou": 0.8518260869565218,
+        "coverage_status": "fully_covered",
+        "boundary_mae_mm": 0.6389999999999993,
+        "first_threshold_hit_delay_s": 0.14199999999999946
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "prediction_id": "SYNTH_09/run1/pred_00001",
+        "event_id": "SYNTH_09_E2",
+        "iou": 0.8662538699690464,
+        "coverage_status": "fully_covered",
+        "boundary_mae_mm": 0.5399999999999707,
+        "first_threshold_hit_delay_s": 0.18700000000000117
+      }
+    ]
+  },
+  "definitions": {
+    "event_recall": "Observed GT events only; partial GT clipped to evaluated support; unobserved GT excluded and listed.",
+    "event_matching": "One-to-one matching maximizes count of IoU-eligible pairs, then total IoU.",
+    "coverage": "Union of scored cells (y_hard in {0,1}, label_weight>0), never nominal seam length.",
+    "frame_weighting": "Unweighted hard-label frame metrics; label_weight controls inclusion only.",
+    "boundary_mae": "Matched fully covered GT only; mean absolute start/end error.",
+    "ece": "10 fixed equal-width probability bins; absolute mean probability minus positive frequency.",
+    "delay": "First threshold-positive observation in a matched predicted interval minus arc-pass GT-start reference time. Geometry offset and sensor availability are reflected in supplied positions/t_decision_s; runtime, hysteresis and actuator delay are not measured. This is not full online latency.",
+    "undefined": "Undefined metrics are JSON null, including absent-class AUROC/balanced accuracy/macro-F1."
+  },
+  "evidence_status": "SYNTHETIC_PIPELINE_ONLY",
+  "stress_delay_frames": 0,
+  "threshold_source": "/workspace/scratch/8ff2ca39cf0e/gmaw_phys_event_v1/results/smoke_full/threshold_selection.json",
+  "threshold_retuned": false,
+  "electrical_age_s": {
+    "min": 0.0,
+    "median": 0.0,
+    "max": 0.0
+  },
+  "timing_note": "Current decision time retained; electrical history is intentionally stale. This is not measured clock error or a calibrated formation lag. Runtime and actuator delay are excluded."
+}

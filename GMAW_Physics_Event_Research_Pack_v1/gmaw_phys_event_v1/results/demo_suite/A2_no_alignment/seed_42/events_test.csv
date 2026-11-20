@@ -1,0 +1,5 @@
+event_id,start_mm,end_mm,class_name,confidence,boundary_sigma_mm,seam_id,segment_id,reference_t_s
+SYNTH_08_E1,25.929,33.97,Undercut,0.95,0.18,SYNTH_08,run1,6.03
+SYNTH_08_E2,55.685,63.425,Undercut,0.95,0.18,SYNTH_08,run1,12.95
+SYNTH_09_E1,26.928000000000004,35.2,Undercut,0.95,0.18,SYNTH_09,run1,6.12
+SYNTH_09_E2,58.08,66.0,Undercut,0.95,0.18,SYNTH_09,run1,13.2

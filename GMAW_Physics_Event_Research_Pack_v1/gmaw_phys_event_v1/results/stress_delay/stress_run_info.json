@@ -1,0 +1,41 @@
+{
+  "checkpoint": "/workspace/scratch/8ff2ca39cf0e/gmaw_phys_event_v1/results/smoke_full/model.pt",
+  "checkpoint_sha256": "f4c1140617f8131eb95be043649dca4aef4c637a5da5b47ccf603092d2b33044",
+  "threshold_file": "/workspace/scratch/8ff2ca39cf0e/gmaw_phys_event_v1/results/smoke_full/threshold_selection.json",
+  "threshold_file_sha256": "0b978a8369749526859b7670b81a1f8f841249b8738616a701c872b550e22ef8",
+  "threshold_selection": {
+    "threshold": 0.5,
+    "objective": "events.f1",
+    "objective_value": 1.0,
+    "reason": "Validation observed-event F1",
+    "selection_split": "validation",
+    "candidates_evaluated": 102,
+    "split_column_verified": true,
+    "evaluation_parameters": {
+      "iou_threshold": 0.1,
+      "merge_gap_mm": 0.0,
+      "min_length_mm": 0.0
+    }
+  },
+  "data_fingerprint_sha256": "f0756fc486663495f0dc93e0d309ac879e04d74990dad1354a54d2d4a9fba207",
+  "split": "test",
+  "delays_frames": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "device": "cpu",
+  "model": {
+    "name": "phys_align",
+    "hidden_dim": 24,
+    "use_heat": true,
+    "use_alignment": true,
+    "use_aux": true
+  },
+  "common_sample_ids_sha256": "646cc648b472b827dbaf33789e5186a70be843cdc5201b2258ff9e7dcda6cdd8",
+  "intervention": "strictly older electrical/power/thermal/position history, unchanged current image/condition/target/labels",
+  "labels_used_to_choose_delay_or_support": false,
+  "original_physics_support_unchanged": true,
+  "evidence_status": "SYNTHETIC_PIPELINE_ONLY"
+}

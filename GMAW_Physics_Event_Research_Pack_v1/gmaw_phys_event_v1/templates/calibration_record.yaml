@@ -1,0 +1,40 @@
+template_version: 1
+record_status: unfilled_template
+calibration_id: null
+applicable_seams: []
+calibration_date: null
+reviewer: null
+time_alignment:
+  common_clock_definition: null
+  synchronization_event_method: null
+  clock_model: "t_common = scale * t_device + offset_s"
+  device_fits: []
+  # Example keys for each fit: device, scale, offset_s, residual_rms_s,
+  # residual_max_s, calibration_points_path, heldout_check_points_path.
+  clock_jump_or_segment_boundaries: []
+camera_timing:
+  t_s_definition: null
+  available_t_s_measurement: null
+  exposure_interval_record: null
+  acquisition_latency_distribution_path: null
+spatial_alignment:
+  welding_positive_direction: null
+  arc_position_source: null
+  roi_geometry_record: null
+  camera_scale_calibration_path: null
+  view_offset_mm: null
+  position_sigma_mm: null
+  systematic_position_bias_mm: null
+  rt_marker_positions_path: null
+  rt_to_weld_mapping_method: null
+  rt_mapping_coefficients: null
+  heldout_marker_residual_rms_mm: null
+  heldout_marker_residual_max_mm: null
+  error_correlation_assessment: null
+leakage_control:
+  defect_labels_used_to_fit_alignment: null
+  test_defect_coordinates_used_for_parameter_selection: null
+  excluded_segments: []
+decision:
+  accepted_for_research: null
+  remaining_limits: []

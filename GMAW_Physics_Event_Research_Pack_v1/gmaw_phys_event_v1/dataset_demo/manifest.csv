@@ -1,0 +1,10 @@
+seam_id,segment_id,split,signal_path,frames_path,trajectory_path,events_path,material,thickness_mm,view_offset_mm,position_sigma_mm,inspection_start_mm,inspection_end_mm,initial_power_w,synthetic
+SYNTH_01,run1,train,SYNTH_01/signals.npz,SYNTH_01/frames.csv,SYNTH_01/trajectory.csv,SYNTH_01/events.csv,SYNTHETIC_NOT_A_MEASURED_MATERIAL,6.0,-0.65,0.15,0.0,57.6,10710.0,True
+SYNTH_02,run1,train,SYNTH_02/signals.npz,SYNTH_02/frames.csv,SYNTH_02/trajectory.csv,SYNTH_02/events.csv,SYNTHETIC_NOT_A_MEASURED_MATERIAL,8.0,-0.65,0.15,0.0,62.900000000000006,10820.25,True
+SYNTH_03,run1,train,SYNTH_03/signals.npz,SYNTH_03/frames.csv,SYNTH_03/trajectory.csv,SYNTH_03/events.csv,SYNTHETIC_NOT_A_MEASURED_MATERIAL,10.0,-0.65,0.15,0.0,68.4,10930.5,True
+SYNTH_04,run1,train,SYNTH_04/signals.npz,SYNTH_04/frames.csv,SYNTH_04/trajectory.csv,SYNTH_04/events.csv,SYNTHETIC_NOT_A_MEASURED_MATERIAL,6.0,-0.65,0.15,0.0,74.10000000000001,11040.75,True
+SYNTH_05,run1,train,SYNTH_05/signals.npz,SYNTH_05/frames.csv,SYNTH_05/trajectory.csv,SYNTH_05/events.csv,SYNTHETIC_NOT_A_MEASURED_MATERIAL,8.0,-0.65,0.15,0.0,80.0,11151.0,True
+SYNTH_06,run1,val,SYNTH_06/signals.npz,SYNTH_06/frames.csv,SYNTH_06/trajectory.csv,SYNTH_06/events.csv,SYNTHETIC_NOT_A_MEASURED_MATERIAL,10.0,-0.65,0.15,0.0,86.1,11261.25,True
+SYNTH_07,run1,val,SYNTH_07/signals.npz,SYNTH_07/frames.csv,SYNTH_07/trajectory.csv,SYNTH_07/events.csv,SYNTHETIC_NOT_A_MEASURED_MATERIAL,6.0,-0.65,0.15,0.0,92.4,11371.5,True
+SYNTH_08,run1,test,SYNTH_08/signals.npz,SYNTH_08/frames.csv,SYNTH_08/trajectory.csv,SYNTH_08/events.csv,SYNTHETIC_NOT_A_MEASURED_MATERIAL,8.0,-0.65,0.15,0.0,98.89999999999999,11481.75,True
+SYNTH_09,run1,test,SYNTH_09/signals.npz,SYNTH_09/frames.csv,SYNTH_09/trajectory.csv,SYNTH_09/events.csv,SYNTHETIC_NOT_A_MEASURED_MATERIAL,10.0,-0.65,0.15,0.0,105.60000000000001,11592.0,True

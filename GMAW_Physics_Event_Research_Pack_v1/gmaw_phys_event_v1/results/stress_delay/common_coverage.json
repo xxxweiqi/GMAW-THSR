@@ -1,0 +1,74 @@
+{
+  "original_eligible_samples": 318,
+  "common_samples": 310,
+  "removed_from_common_support": 8,
+  "delays_frames": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "per_delay_eligibility": {
+    "0": {
+      "eligible_before_intersection": 318,
+      "rejected_by_reason": {}
+    },
+    "1": {
+      "eligible_before_intersection": 316,
+      "rejected_by_reason": {
+        "delayed_anchor_before_thermal_warmup": 2
+      }
+    },
+    "2": {
+      "eligible_before_intersection": 314,
+      "rejected_by_reason": {
+        "delayed_anchor_before_thermal_warmup": 4
+      }
+    },
+    "4": {
+      "eligible_before_intersection": 310,
+      "rejected_by_reason": {
+        "delayed_anchor_before_thermal_warmup": 8
+      }
+    }
+  },
+  "sample_intersection_rule": "all requested delays pass causal raw support, warmup, no gaps and geometry support; no label/probability criterion",
+  "identical_spatial_cells": true,
+  "threshold_retuned": false,
+  "physical_support_expanded": false,
+  "warning": "Delay 0 is rescored on the common intersection; compare against that baseline, not the original full test score.",
+  "common_sample_ids_sha256": "646cc648b472b827dbaf33789e5186a70be843cdc5201b2258ff9e7dcda6cdd8",
+  "evaluation_coverage": {
+    "total_evaluated_m": 0.16806874999999996,
+    "input_frames": 310,
+    "scored_frames": 310,
+    "excluded_frames": 0,
+    "boundary_uncertain_scored_frames": 15,
+    "excluded_non_target_gt_events": 0,
+    "segments": [
+      {
+        "seam_id": "SYNTH_08",
+        "segment_id": "run1",
+        "evaluated_mm": 80.89375,
+        "intervals_mm": [
+          [
+            17.356250000000003,
+            98.25
+          ]
+        ]
+      },
+      {
+        "seam_id": "SYNTH_09",
+        "segment_id": "run1",
+        "evaluated_mm": 87.17499999999998,
+        "intervals_mm": [
+          [
+            17.775000000000002,
+            104.94999999999999
+          ]
+        ]
+      }
+    ]
+  },
+  "observed_event_count": 4
+}

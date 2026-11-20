@@ -1,0 +1,1 @@
+sample_id,seam_id,segment_id,s_mm,cell_start_mm,cell_end_mm,t_frame_s,t_decision_s,y_hard,y_soft,label_weight,boundary_uncertain,synthetic,split,p_defect

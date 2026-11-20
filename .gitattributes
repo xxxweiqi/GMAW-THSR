@@ -1,0 +1,2 @@
+# The release manifest verifies file bytes, including original line endings.
+GMAW_Physics_Event_Research_Pack_v1/** -text

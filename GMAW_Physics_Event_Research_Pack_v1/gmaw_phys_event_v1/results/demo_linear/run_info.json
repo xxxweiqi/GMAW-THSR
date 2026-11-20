@@ -1,0 +1,68 @@
+{
+  "model": "fixed_thermal_logistic",
+  "config": {
+    "seed": 42,
+    "data": {
+      "history_frames": 8,
+      "signal_window_s": 0.1,
+      "waveform_samples": 128,
+      "image_size": 48,
+      "power_reference_w": 12000.0,
+      "thermal_taus_s": [
+        0.15,
+        0.35,
+        0.75
+      ],
+      "warmup_s": 3.75,
+      "geometry_horizon_frames": 1,
+      "alignment_pre_mm": 3.0,
+      "alignment_post_mm": 1.5,
+      "position_sigma_floor_mm": 0.5,
+      "max_image_gap_s": 0.2,
+      "max_signal_gap_factor": 2.1
+    },
+    "model": {
+      "name": "phys_align",
+      "hidden_dim": 24,
+      "use_heat": true,
+      "use_alignment": true,
+      "use_aux": true
+    },
+    "train": {
+      "epochs": 3,
+      "batch_size": 32,
+      "learning_rate": 0.002,
+      "weight_decay": 0.0001,
+      "patience": 3,
+      "aux_weight": 0.2,
+      "num_workers": 0,
+      "torch_threads": 2,
+      "device": "cpu"
+    },
+    "evaluation": {
+      "iou_threshold": 0.1,
+      "merge_gap_mm": 0.0,
+      "min_length_mm": 0.0,
+      "bootstrap_repeats": 200
+    }
+  },
+  "versions": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "torch": "2.6.0+cpu",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "Pillow": "13.0.0",
+    "PyYAML": "6.0.3"
+  },
+  "samples": {
+    "train": 575,
+    "val": 286,
+    "test": 318
+  },
+  "elapsed_s": 10.427742637999472,
+  "evidence_status": "SYNTHETIC_PIPELINE_ONLY",
+  "scope": "Simple causal thermal baseline, not ARX and not original MBGN"
+}

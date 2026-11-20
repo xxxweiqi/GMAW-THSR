@@ -1,0 +1,51 @@
+template_version: 1
+record_status: unfilled_template
+experiment_id: null
+experiment_date: null
+hypothesis: null
+primary_comparison: null
+evidence_type: null
+# evidence_type: synthetic_pipeline_only or real_weld_experiment
+data:
+  root: null
+  manifest_sha256: null
+  native_file_hash_manifest: null
+  split_freeze_date: null
+  train_seams: []
+  val_seams: []
+  test_seams: []
+  independent_events_by_seam: null
+  evaluated_length_by_seam_m: null
+  calibration_record: null
+method:
+  code_commit_or_archive_sha256: null
+  original_mbgn_or_reference: null
+  original_mbgn_source_identity: null
+  resolved_config_path: null
+  seed: null
+  trainable_parameters: null
+  use_heat: null
+  use_alignment: null
+  use_aux: null
+  future_input_allowed_s: null
+  auxiliary_observation_coverage: null
+selection:
+  checkpoint_selection_rule: null
+  threshold_policy: null
+  threshold_selection_split: null
+  threshold_json_path: null
+  event_iou_threshold: null
+  merge_gap_mm: null
+  min_length_mm: null
+  frozen_before_test: null
+results:
+  run_directory: null
+  prediction_csv: null
+  metrics_json: null
+  paired_comparison_json: null
+  failed_or_unobserved_events: null
+  evidence_limits: []
+deviations:
+  changes_after_preregistration: []
+  test_results_seen_before_changes: null
+  next_independent_validation_required: null

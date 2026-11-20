@@ -1,0 +1,43 @@
+# All runs share the same seams, eligible samples, seeds and training budget.
+# B0_reference is a lightweight causal fusion baseline, NOT original MBGN.
+experiments:
+  - id: B0_reference
+    model: snapshot_fusion
+    use_heat: false
+    use_alignment: false
+    use_aux: false
+  - id: B1_history
+    model: history_gru
+    use_heat: false
+    use_alignment: false
+    use_aux: false
+  - id: B2_power_features
+    model: power_features
+    use_heat: false
+    use_alignment: false
+    use_aux: false
+  - id: B3_thermal_filter
+    model: thermal_filter
+    use_heat: true
+    use_alignment: false
+    use_aux: false
+  - id: A1_no_heat
+    model: phys_align
+    use_heat: false
+    use_alignment: true
+    use_aux: true
+  - id: A2_no_alignment
+    model: phys_align
+    use_heat: true
+    use_alignment: false
+    use_aux: true
+  - id: A3_no_aux
+    model: phys_align
+    use_heat: true
+    use_alignment: true
+    use_aux: false
+  - id: P_full
+    model: phys_align
+    use_heat: true
+    use_alignment: true
+    use_aux: true

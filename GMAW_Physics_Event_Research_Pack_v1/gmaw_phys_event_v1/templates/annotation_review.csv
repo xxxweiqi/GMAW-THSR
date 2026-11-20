@@ -1,0 +1,1 @@
+seam_id,segment_id,event_id,source_image_or_scan,reviewer_a,reviewer_a_class,reviewer_a_start_mm,reviewer_a_end_mm,reviewer_b,reviewer_b_class,reviewer_b_start_mm,reviewer_b_end_mm,disagreement_summary,final_class,final_start_mm,final_end_mm,confidence,boundary_sigma_mm,coverage_verified,adjudicator,adjudication_date,notes

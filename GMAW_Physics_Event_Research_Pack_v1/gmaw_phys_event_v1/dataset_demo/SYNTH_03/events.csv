@@ -1,0 +1,3 @@
+event_id,start_mm,end_mm,class_name,confidence,boundary_sigma_mm
+SYNTH_03_E1,21.204,28.120000000000005,Undercut,0.95,0.18
+SYNTH_03_E2,44.46,51.300000000000004,Undercut,0.95,0.18

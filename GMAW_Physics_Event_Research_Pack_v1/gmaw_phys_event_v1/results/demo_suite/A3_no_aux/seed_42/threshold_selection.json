@@ -1,0 +1,14 @@
+{
+  "threshold": 0.5,
+  "objective": "events.f1",
+  "objective_value": 1.0,
+  "reason": "Validation observed-event F1",
+  "selection_split": "validation",
+  "candidates_evaluated": 102,
+  "split_column_verified": true,
+  "evaluation_parameters": {
+    "iou_threshold": 0.1,
+    "merge_gap_mm": 0.0,
+    "min_length_mm": 0.0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "synthetic": true,
+  "purpose": "software smoke tests only",
+  "native_signal_hz": 2000,
+  "image_hz": 8,
+  "image_size_px": [
+    64,
+    64
+  ],
+  "seams": 9,
+  "split_seams": [
+    5,
+    2,
+    2
+  ],
+  "duration_s": [
+    16,
+    24
+  ],
+  "target_events_per_seam": 2,
+  "seed": 42,
+  "warning": "Artificial correlations are built in. No real measurements, true defect mechanism, MBGN reproduction, or research performance claims."
+}

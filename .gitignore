@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+/初稿.log
+/初稿.out
+/初稿.toc
