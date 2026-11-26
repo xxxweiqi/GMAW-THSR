@@ -1,0 +1,69 @@
+% !TeX program = xelatex
+% Build with: latexmk -xelatex paper_template.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.5cm]{geometry}
+
+% The first build creates a .bib file. Replace the placeholder in that file.
+\begin{filecontents*}{\jobname.bib}
+@article{mbgn_placeholder,
+  author  = {Weiqi Xue},
+  title   = {{MBGN} baseline paper title},
+  journal = {Journal name pending},
+  year    = {YYYY}
+}
+\end{filecontents*}
+
+\title{Multimodal Defect Event Recognition in GMAW Guided by Thermal History and Spatiotemporal Registration}
+\author{Weiqi Xue\\Department and Institution}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+[State the challenge of detecting undercut events in gas metal arc welding (GMAW).]
+[Describe how the method aligns welding current and voltage with weld pool images and accounts for thermal history and uncertainty in event boundaries.]
+[Report event recall and false alarms per metre of evaluated weld on held-out welds.]
+[Summarize the main finding and the conditions under which it holds.]
+\end{abstract}
+\noindent\textbf{Keywords:} gas metal arc welding, undercut, thermal history, spatiotemporal registration, multimodal fusion
+
+\section{Introduction}
+Introduce the MBGN baseline~\cite{mbgn_placeholder}. State which aspects of undercut detection may depend on the duration of the electrical signal window or on its alignment with the images.
+
+\section{Data and Event Annotation}
+\subsection{Welding Conditions and Data Acquisition}
+Describe the welds, process settings, electrical sampling rates, camera frame rate, and synchronization procedure.
+\subsection{Undercut Intervals and Evaluated Weld Length}
+Define the normal and undercut classes. Explain how event boundaries were annotated and which weld intervals were eligible for evaluation.
+
+\section{Methods}
+\subsection{Multiscale Thermal History}
+Define instantaneous electrical power and the features used to estimate heat accumulation over each preceding time window.
+\subsection{Causal Spatiotemporal Registration}
+Explain how image timestamps map to weld positions, which electrical samples are available at prediction time, and how uncertainty in the annotated boundaries is handled.
+\subsection{Multimodal Fusion and Event Detection}
+Describe how the model combines electrical signals and images and converts consecutive predictions into undercut events. Figure~\ref{fig:overview} summarizes this procedure.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\parbox[c][32mm][c]{0.85\linewidth}{\centering Insert the method overview here.}}
+  \caption{Alignment and fusion of welding current, voltage, and weld pool images for undercut event detection.}
+  \label{fig:overview}
+\end{figure}
+
+\section{Experimental Design}
+\subsection{Weld-Level Splits and Evaluation Metrics}
+Identify the training, validation, and test welds. Specify how the detection threshold is selected, how predicted events are matched to annotations, and how evaluated weld length is measured.
+\subsection{Baseline and Ablation Studies}
+Describe the MBGN baseline and the comparisons used to isolate the effects of thermal history, registration, and boundary uncertainty.
+
+\section{Results and Discussion}
+Report the number of annotated, detected, missed, and falsely predicted events on held-out welds. Compare event recall and false alarms per metre across methods and examine representative errors.
+
+\section{Conclusions}
+State which research questions the results resolve and which welding conditions the conclusions cover.
+
+\bibliographystyle{unsrt}
+\bibliography{\jobname}
+\end{document}
